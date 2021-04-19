@@ -16,7 +16,7 @@ app.use(cors());
 //LIST ALL THE REVIEWS
 
 app.get("/reviews", function(req,res){
-    model.Review.find().then(function(reviews){
+    model.Review.find().sort({date: 'asc'}).then(function(reviews){
         for (var i = 0; i < reviews.length; i++){
             var dateCreated = new Date(reviews[i].date);
             reviews[i].date = moment(dateCreated).fromNow();
