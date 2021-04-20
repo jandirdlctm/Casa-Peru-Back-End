@@ -24,6 +24,10 @@ const reviewsSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    dateCreated:{
+        type: Date,
+        required: false
+    },
     image: {
         type: String,
         required: false
