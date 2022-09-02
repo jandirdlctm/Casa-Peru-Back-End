@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose.connect('mongodb+srv://jandir_17:PtiOpPuiU8jdjXMs@cluster0.vqspd.mongodb.net/casaPeruReviews?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
-
+//mongoose.connect('mongodb+srv://jandir_porta:<opnaj19!234>@jandirdb.yrmsw.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
 
 const reviewsSchema = mongoose.Schema({
     firstName: {
